@@ -1,0 +1,30 @@
+Q1) Abbreviation using backtracking
+1. You are given a word.
+2. You have to generate all abbrevations of that word.
+
+str = pep
+pep
+pe1
+p1p
+p2
+1ep
+1e1
+2p
+3
+
+--------------------------------------------------------------------------------------------------
+
+Q2) N Queen using backtracking
+
+1. You are given a number n, the size of a chess board.
+2. You are required to place n number of queens in the n * n cells of board such that no queen can 
+     kill another.
+Note - Queens kill at distance in all 8 directions
+3. Complete the body of printNQueens function - without changing signature - to calculate and 
+     print all safe configurations of n-queens
+
+n=4
+0-1, 1-3, 2-0, 3-2, .
+0-2, 1-0, 2-3, 3-1, .
+
+---------------------------------------------------------------------------------------------------
