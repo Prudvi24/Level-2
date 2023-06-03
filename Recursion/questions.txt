@@ -196,5 +196,55 @@ sample output
 7 4 5 2 8 6 3 1 9 
 
 -----------------------------------------------------------------------------------------------------------
-     
-     
+
+Q8) Crossword puzzle using backtracking 
+
+1. You are given a 10*10 2-D array(arr) containing only '+' and '-' characters, which represents a 
+    crossword puzzle. 
+2. You are also given n number of words which need to be filled into the crossword.
+3. Cells containing '-' are to be filled with the given words.
+
+Input Format
+
+10 * 10 grid of characters containing only '+' and '-' 
+A number n
+str1
+str2
+...n strings
+
+Constraints
+
+1 <= n <= 10
+
+Input Format
+
++-++++++++
++-++++++++
++-++++++++
++-----++++
++-+++-++++
++-+++-++++
++++++-++++
+++------++
++++++-++++
++++++-++++
+4
+LONDON
+DELHI 
+ICELAND 
+ANKARA
+
+Output Format
+
++L++++++++
++O++++++++
++N++++++++
++DELHI++++
++O+++C++++
++N+++E++++
++++++L++++
+++ANKARA++
++++++N++++
++++++D++++
+
+-----------------------------------------------------------------------------------------------------------     
