@@ -1,0 +1,310 @@
+Q1) Abbreviation using backtracking
+1. You are given a word.
+2. You have to generate all abbrevations of that word.
+
+str = pep
+pep
+pe1
+p1p
+p2
+1ep
+1e1
+2p
+3
+
+--------------------------------------------------------------------------------------------------
+
+Q2) N Queen using backtracking
+
+1. You are given a number n, the size of a chess board.
+2. You are required to place n number of queens in the n * n cells of board such that no queen can 
+     kill another.
+Note - Queens kill at distance in all 8 directions
+3. Complete the body of printNQueens function - without changing signature - to calculate and 
+     print all safe configurations of n-queens
+
+n=4
+0-1, 1-3, 2-0, 3-2, .
+0-2, 1-0, 2-3, 3-1, .
+
+---------------------------------------------------------------------------------------------------
+
+Q3) Maximum Score of Words Problem using backtracking
+
+1. You are given a list of words, a list of alphabets(might be repeating) and score of every alphabet 
+     from a to z.
+2. You have to find the maximum score of any valid set of words formed by using the given 
+     alphabets.
+3. A word can not be used more than one time.
+4. Each alphabet can be used only once. 
+5. It is not necessary to use all the given alphabets.
+
+I/P format
+A number N representing number of words
+N space separated strings
+A number M representing number of alphabets(might be repeating)
+M space separated characters
+26 numbers representing score of unique alphabets from a to z.
+
+Constraints
+
+1 <= N <= 14
+1 <= length of word <= 15
+1 <= M <= 100
+1 <= Value of score <= 10
+
+Output : 23
+
+-----------------------------------------------------------------------------------------------------------
+
+Q4) Josephus Problem
+
+1. You are given two numbers N and K.
+2. N represents the total number of soldiers standing in a circle having position marked from 0 to N-1.
+3. A cruel king wants to execute them but in a different way.
+4. He starts executing soldiers from 0th position and proceeds around the circle in clockwise direction.
+5. In each step, k-1 soldiers are skipped and the k-th soldier is executed.
+6. The elimination proceeds around the circle (which is becoming smaller and smaller as the executed soldiers are removed), until only the last soldier remains, who is given freedom.
+7. You have to find the position of that lucky soldier.
+
+Input format : 2 numbers N and K
+1 <= N,K <= 200
+
+Sample Input
+
+4
+2
+
+Output : 0
+
+-----------------------------------------------------------------------------------------------------------
+
+Q5) Lexicographical Numbers 
+
+1. You are given a number.
+2. You have to print all the numbers from 1 to n in lexicographical order.
+
+Constraints
+1 <= n <= 50000
+
+input : 14
+
+output
+1
+10
+11
+12
+13
+14
+2
+3
+4
+5
+6
+7
+8
+9
+
+-----------------------------------------------------------------------------------------------------------
+
+Q6) Gold Mine problem
+
+1. You are given a number n, representing the number of rows.
+2. You are given a number m, representing the number of columns.
+3. You are given n*m numbers, representing elements of 2d array a, which represents a gold mine.
+4. You are allowed to take one step left, right, up or down from your current position.
+5. You can't visit a cell with 0 gold and the same cell more than once. 
+6. Each cell has a value that is the amount of gold available in the cell.
+7. You are required to identify the maximum amount of gold that can be dug out from the mine if 
+     you start and stop collecting gold from any position in the grid that has some gold.
+     
+ Input Format
+
+A number n
+A number m
+e11
+e12..
+e12
+e22..
+m*n numbers
+
+Output Format
+
+Maximum gold collected
+
+Constraints
+
+1 <= n <= 10
+1 <= m <= 10
+0 <= e1, e2, .. n * m elements <= 1000
+
+Sample Input
+6
+6
+0 1 4 2 8 2
+4 3 6 5 0 4
+1 2 4 1 4 6
+2 0 7 3 2 2
+3 1 5 9 2 4
+2 7 0 8 5 1
+
+Sample Output
+
+120
+
+-----------------------------------------------------------------------------------------------------------
+
+Q7) Sudoku backtracking
+
+1. You are give a partially filled 9*9 2-D array(arr) which represents an incomplete sudoku state.
+2. You are required to assign the digits from 1 to 9 to the empty cells following some rules.
+Rule 1 -> Digits from 1-9 must occur exactly once in each row.
+Rule 2 -> Digits from 1-9 must occur exactly once in each column.
+Rule 3 -> Digits from 1-9 must occur exactly once in each 3x3 sub-array of the given 2D array.
+
+Assumption -> The given Sudoku puzzle will have a single unique solution.
+
+Input Format
+
+9*9 integers ranging from 1 to 9.
+0 represents an empty cell.
+
+Output Format
+
+You have to print the solved sudoku.
+
+sample input
+3 0 6 5 0 8 4 0 0
+5 2 0 0 0 0 0 0 0
+0 8 7 0 0 0 0 3 1
+0 0 3 0 1 0 0 8 0
+9 0 0 8 6 3 0 0 5
+0 5 0 0 9 0 6 0 0
+1 3 0 0 0 0 2 5 0
+0 0 0 0 0 0 0 7 4
+0 0 5 2 0 6 3 0 0
+
+sample output
+3 1 6 5 7 8 4 9 2 
+5 2 9 1 3 4 7 6 8 
+4 8 7 6 2 9 5 3 1 
+2 6 3 4 1 5 9 8 7 
+9 7 4 8 6 3 1 2 5 
+8 5 1 7 9 2 6 4 3 
+1 3 8 9 4 7 2 5 6 
+6 9 2 3 5 1 8 7 4 
+7 4 5 2 8 6 3 1 9 
+
+-----------------------------------------------------------------------------------------------------------
+
+Q8) Crossword puzzle using backtracking 
+
+1. You are given a 10*10 2-D array(arr) containing only '+' and '-' characters, which represents a 
+    crossword puzzle. 
+2. You are also given n number of words which need to be filled into the crossword.
+3. Cells containing '-' are to be filled with the given words.
+
+Input Format
+
+10 * 10 grid of characters containing only '+' and '-' 
+A number n
+str1
+str2
+...n strings
+
+Constraints
+
+1 <= n <= 10
+
+Input Format
+
++-++++++++
++-++++++++
++-++++++++
++-----++++
++-+++-++++
++-+++-++++
++++++-++++
+++------++
++++++-++++
++++++-++++
+4
+LONDON
+DELHI 
+ICELAND 
+ANKARA
+
+Output Format
+
++L++++++++
++O++++++++
++N++++++++
++DELHI++++
++O+++C++++
++N+++E++++
++++++L++++
+++ANKARA++
++++++N++++
++++++D++++
+
+-----------------------------------------------------------------------------------------------------------
+
+Q9) Cryptic puzzle using backtracking
+
+1. You are given three strings s1, s2 and s3.
+2. First two are supposed to add and form third. s1 + s2 = s3
+3. You have to map each individual character to a digit, so that the above equation holds true.
+Input Format
+
+Three strings
+s1
+s2
+s3
+
+constraints
+1 <= length of s1,s2,s3 <= 10  
+
+Sample Input
+
+team
+pep
+toppr
+
+Sample ouput
+a-3 e-9 m-4 o-1 p-2 r-6 t-0 
+a-3 e-9 m-5 o-1 p-2 r-7 t-0 
+a-3 e-9 m-6 o-1 p-2 r-8 t-0 
+a-4 e-9 m-2 o-1 p-3 r-5 t-0 
+a-4 e-9 m-5 o-1 p-3 r-8 t-0 
+a-5 e-9 m-2 o-1 p-4 r-6 t-0 
+a-5 e-9 m-3 o-1 p-4 r-7 t-0 
+a-6 e-9 m-2 o-1 p-5 r-7 t-0 
+a-6 e-9 m-3 o-1 p-5 r-8 t-0 
+a-7 e-9 m-2 o-1 p-6 r-8 t-0 
+
+-----------------------------------------------------------------------------------------------------------
+
+Q10) Friends pairing using backtracking
+
+1. You are given an integer n, which represents n friends numbered from 1 to n.
+2. Each one can remain single or can pair up with some other friend.
+3. You have to print all the configurations in which friends can remain single or can be paired up.
+
+Input Format
+
+A number n
+
+Constraints
+
+1 <= n <= 10
+
+Sample input : 3
+
+Sample Output
+
+1.(1) (2) (3) 
+2.(1) (2,3) 
+3.(1,2) (3) 
+4.(1,3) (2) 
+
+-----------------------------------------------------------------------------------------------------------

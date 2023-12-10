@@ -1,0 +1,19 @@
+1) To check the memork leaks (segmentation fault) in a process/program
+
+ Valgrind is a open-source memory access error and leak detection tool.
+
+To use Valgrind, perform the following steps:
+
+    1. Compile the code with the -g flag, for example:
+
+    $ gcc -g -O1 test.c
+
+    An optimization level of 1 is generally faster than level 0, although it can cause incorrect line numbers to be reported.
+
+    An optimization level higher than 1 can cause spurious uninitialised-value errors to be reported.
+
+    2. Use the valgrind as a wrapper for running the binary and perform stress testing:
+
+    $ valgrind --leak-check=yes --log-file=valgrind.rpt a.out
+
+    Memory access checking is enabled by default. The --leak-check option runs the memory leak detector when the binary exits. If you specify its value as summary, it reports how many leaks occurred. A value of full or yes displays the details of each individual leak. 
